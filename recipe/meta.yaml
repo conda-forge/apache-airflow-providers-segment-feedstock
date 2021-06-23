@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-segment" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-segment-{{ version }}.tar.gz
-  sha256: 3a223e7f6aa9cdc8a4bbafe156cc163112c557308cafed724950f4de2db60fb4
+  sha256: a3d3ec6394952b7dd0129670f4322657aaae86b9baaab8a9fbeaca5482b365cf
 
 build:
   number: 0
