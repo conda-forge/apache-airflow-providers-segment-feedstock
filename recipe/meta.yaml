@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-segment" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-segment-{{ version }}.tar.gz
-  sha256: 73cd2250a5c7411534b17ff9aff3bd0a0275eda3c9fe6fc0b902a9c469f12e20
+  sha256: 5227fd8b79d6f4cb7007281682eb5ec981bab1855586a0c05c595e3907060d78
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - analytics-python >=1.2.9
-    - apache-airflow >=2.2.0
+    - apache-airflow >=2.3.0
 
 test:
   imports:
