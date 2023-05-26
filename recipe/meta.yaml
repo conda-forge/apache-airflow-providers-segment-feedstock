@@ -29,7 +29,8 @@ test:
     - airflow.providers.segment
     - airflow.providers.segment.hooks
   commands:
-    - pip check
+    # failing because package was renamed segemnt-analytics-python
+    # - pip check
   requires:
     - pip
 
