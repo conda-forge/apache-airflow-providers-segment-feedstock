@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.dev0
-    - flit-core >=3.2,<4
+    - python {{ python_min }}
+    - flit-core ==3.10.0
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }},<4.dev0
     - analytics-python >=1.2.9
     - apache-airflow >=2.9.0
 
@@ -31,6 +31,7 @@ test:
     # failing because package was renamed segemnt-analytics-python
     # - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
