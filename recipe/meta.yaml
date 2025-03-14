@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-segment" %}
-{% set version = "3.7.1" %}
+{% set version = "3.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_segment-{{ version }}.tar.gz
-  sha256: 364ce9f4867fb7885d9603cb62a56f763931ae9205df4879d3efd7dc9f6dd13c
+  sha256: f1e9e0ae472c3adc69f41177753c3b7aa5baef8b5f8e120260c71333b2b01860
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.0
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }},<4.dev0
