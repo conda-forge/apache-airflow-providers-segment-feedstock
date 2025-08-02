@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_segment-{{ version }}.tar.gz
   sha256: 5a6d3e56465517fb786e2e278d38cf43be45cdd7aa00d1460804e77549f81927
-  patches:
-    - 0001-rename-analytics-python.patch
 
 build:
   noarch: python
