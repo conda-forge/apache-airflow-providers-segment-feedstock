@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - apache-airflow-providers-common-compat >=1.8.0
-    - segment-analytics-python >=2.3.0
+    - analytics-python >=2.3.0
 
 test:
   imports:
