@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-segment" %}
-{% set version = "3.8.2" %}
-{% set python_min = "3.10" %}
+{% set version = "3.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_segment-{{ version }}.tar.gz
-  sha256: 5a6d3e56465517fb786e2e278d38cf43be45cdd7aa00d1460804e77549f81927
+  sha256: 48b7cac23ffb3c644d6498ec831306c9041bd929b46cdf878ae62255e0c237bf
 
 build:
   noarch: python
@@ -23,6 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - analytics-python >=2.3.0
 
 test:
@@ -38,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-segment for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/segment/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-segment/stable/index.html
   dev_url: https://github.com/apache/airflow/
