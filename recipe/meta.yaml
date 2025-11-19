@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-segment" %}
 {% set version = "3.8.3" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -21,11 +20,10 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - apache-airflow-providers-common-compat >=1.8.0
-    - segment-analytics-python >=2.3.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
-    - analytics-python >=2.3.0
+    - apache-airflow-providers-common-compat >=1.8.0
+    - segment-analytics-python >=2.3.0
 
 test:
   imports:
@@ -40,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-segment for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/segment/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-segment/stable/index.html
   dev_url: https://github.com/apache/airflow/
