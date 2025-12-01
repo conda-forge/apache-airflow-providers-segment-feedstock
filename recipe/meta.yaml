@@ -20,7 +20,6 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - segment-analytics-python >=2.3.0
     - python >={{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
