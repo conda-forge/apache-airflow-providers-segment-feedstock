@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-segment
-  version: "3.9.3"
+  version: "3.9.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_segment-${{ version }}.tar.gz
-  sha256: 3b2bf0c8151a14928cd3a343d29a920896ebf6540c083f631c0ad08abc632499
+  sha256: 7efb0f4bc3d588f924658108ab3296a19f319a56b77283b587b0e75855d98348
 
 build:
   noarch: python
@@ -31,7 +31,9 @@ tests:
       imports:
         - airflow.providers.segment
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/apache/airflow/
