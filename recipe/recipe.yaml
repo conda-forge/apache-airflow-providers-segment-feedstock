@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-segment
-  version: "3.9.4"
+  version: "3.9.5"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_segment-${{ version }}.tar.gz
-  sha256: 7efb0f4bc3d588f924658108ab3296a19f319a56b77283b587b0e75855d98348
+  sha256: 2591a4299c8ddaa2d8125216e2eddc4de6b4f08d81af1688d171a205124c40a7
 
 build:
   noarch: python
