@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-segment
-  version: "3.9.5"
+  version: "3.10.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_segment-${{ version }}.tar.gz
-  sha256: 2591a4299c8ddaa2d8125216e2eddc4de6b4f08d81af1688d171a205124c40a7
+  sha256: 63aedf51c6ac0ab29f7b908c41d808d10232f1f937540cf3a46f88b7bc747eeb
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==3.12.0
+    - flit-core ==4.0.2
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
